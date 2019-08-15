@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     /* calc 計算 - CSS 計算數字 + - * / */
-    height: calc(100vw / 2.1);
+    height: calc(100vw / 2.2);
 }
 
 #logo {
@@ -61,7 +61,6 @@ nav {
 }
 
 .title::before {
-    /*  */
     content: "＼";
     padding-right: 20px;
 }
@@ -72,9 +71,12 @@ nav {
 }
 
 #brands p {
-    width: 500px;
+    width: 570px;
     margin: 0 auto;
     padding: 30px;
     line-height: 2;
+    /* 透明度 0 - 1 */
     opacity: 0.6;
+    /* 字距 */
+    letter-spacing: 6px;
 }
