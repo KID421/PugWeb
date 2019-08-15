@@ -55,6 +55,23 @@ nav {
     color: #58451a;
 }
 
+#brands p {
+    width: 570px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 2;
+    /* 透明度 0 - 1 */
+    opacity: 0.6;
+    /* 字距 */
+    letter-spacing: 6px;
+}
+
+
+/* 標題區塊 */
+.title-box {
+    text-align: center;
+    color: #58451a;
+}
 .title {
     font-size: 1.5em;
     padding: 10px 0;
@@ -68,15 +85,4 @@ nav {
 .title::after {
     content: "／";
     padding-left: 20px;
-}
-
-#brands p {
-    width: 570px;
-    margin: 0 auto;
-    padding: 30px;
-    line-height: 2;
-    /* 透明度 0 - 1 */
-    opacity: 0.6;
-    /* 字距 */
-    letter-spacing: 6px;
 }
