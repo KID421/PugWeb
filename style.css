@@ -9,7 +9,7 @@ body {
 }
 
 #banner {
-    background-image: url(imgs/Banner.jpg);
+    background-image: url(imgs/banner.jpg);
     background-size: 100vw;
     /* bgr 背景圖片重複 */
     background-repeat: no-repeat;
@@ -86,3 +86,8 @@ nav {
     content: "／";
     padding-left: 20px;
 }
+
+.title-box h1 {
+    font-size: 1.6em;
+}
+
