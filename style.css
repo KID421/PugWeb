@@ -10,7 +10,8 @@
     /* bgr 背景圖片重複 */
     background-repeat: no-repeat;
     width: 100vw;
-    height: 900px;
+    /* calc 計算 - CSS 計算數字 + - * / */
+    height: calc(100vw / 2.4);
 }
 
 #logo {
@@ -42,4 +43,9 @@ nav {
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
+}
+
+/* 品牌區塊 */
+#brands {
+    text-align: center;
 }
