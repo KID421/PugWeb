@@ -17,6 +17,8 @@ body {
     width: 100vw;
     /* calc 計算 - CSS 計算數字 + - * / */
     height: calc(100vw / 2.2);
+
+    overflow: hidden;
 }
 
 #logo {
@@ -90,4 +92,18 @@ nav {
 
 .title-box h1 {
     font-size: 1.6em;
+}
+
+/* 產品區塊 */
+#product {
+    /* 顯示模式：格線 */
+    display: grid;
+    /* 格線-框架-欄位：欄位尺寸 欄位尺寸 欄位尺寸 */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 20px;
+}
+
+#product img {
+    width: 100%;
 }
