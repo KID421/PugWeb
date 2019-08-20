@@ -20,16 +20,16 @@ body {
     height: calc(100vw / 2.2);
 }
 
-#logo {
+.logo {
     width: 300px;
 }
 
-#link {
+.link {
     float: right;
     padding: 40px 0;
 }
 
-#link a {
+.link a {
     color: #fff;
     text-decoration: none;
     /* 內距：上下 左右 */
@@ -38,7 +38,7 @@ body {
     font-weight: 800;
 }
 
-#link a:hover {
+.link a:hover {
     background-color: #ffe048;
     color: black;
     transition: 0.6s;
@@ -49,6 +49,7 @@ nav {
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
+    text-align: left;
 }
 
 /* 品牌區塊 */
@@ -164,4 +165,15 @@ nav {
     height: 5px;
     background-repeat: repeat-x;
     margin-bottom: 20px;
+}
+
+footer {
+    background-color: #642200;
+    color: #fff;
+    margin-top: 100px;
+}
+footer #copy {
+    padding-top: 50px;
+    font-size: 0.5em;
+    text-align: center;
 }
