@@ -16,6 +16,7 @@ body {
     /* bgr 背景圖片重複 */
     background-repeat: no-repeat;
     width: 100vw;
+    max-width: 100%;
     /* calc 計算 - CSS 計算數字 + - * / */
     height: calc(100vw / 2.2);
 }
@@ -74,6 +75,7 @@ nav {
 .title-box {
     text-align: center;
     color: #58451a;
+    margin: 30px 0;
 }
 .title {
     font-size: 1.5em;
@@ -103,7 +105,7 @@ nav {
     /* 格線-間隙 */
     grid-gap: 50px;
 
-    padding: 30px;
+    padding: 0 30px;
 
     width: 920px;
 
@@ -140,6 +142,70 @@ nav {
     line-height: 1.8;
 }
 
+/* 最新消息 */
+#news {
+    width: 920px;
+    height: 300px;
+    margin: 50px auto 0 auto;
+    padding: 30px;
+    background-image: url("imgs/news.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    z-index: -2;
+    display: grid;
+    align-items: center;
+}
+#news::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+#news h1 {
+    color: #fbab13;
+}
+#news p {
+    line-height: 2;
+}
+#news .date {
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+/* 聯絡我們 */
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 920px;
+    margin: 0 auto 50px auto;
+    padding: 0 30px;
+}
+.contact-box {
+    border: 1px solid #999;
+    padding: 30px;
+}
+.contact-box img {
+    width: 60px;
+}
+.contact-box h2 {
+    color: #fbab13;
+    padding: 20px 0;
+}
+.contact-box p {
+    font-weight: 900;
+    padding: 5px 0;
+}
+.contact-box span {
+    font-weight: 100;
+}
+
 /* 按鈕效果 */
 /* a 行內元素 - 不能調寬高 */
 .btn-big {
@@ -167,6 +233,45 @@ nav {
     margin-bottom: 20px;
 }
 
+/* 麵包屑 */
+.breadcrumbs {
+    width: 920px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+}
+.breadcrumbs-box {
+    background-color: #faf7f0;
+    width: auto;
+    display: inline-block;
+    padding: 10px;
+    border: 0.5px solid #999;
+    border-radius: 10px;
+}
+.breadcrumbs::after {
+    content: "";
+    position: absolute;
+    background-color: #999;
+    height: 0.5px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9em;
+    padding: 5px;
+}
+.breadcrumbs span {
+    color: #999;
+}
+.breadcrumbs .breadcrumbs-current {
+    color: #fbab13;
+}
+
+/* 頁尾 */
 footer {
     background-color: #642200;
     color: #fff;
@@ -222,5 +327,15 @@ footer #copy {
     .link {
         float: none;
         padding: 10px 0;
+    }
+
+    #news {
+        width: 95%;
+        height: 500px;
+    }
+
+    #contact {
+        width: 100%;
+        grid-template-columns: 1fr;
     }
 }

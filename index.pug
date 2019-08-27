@@ -15,6 +15,14 @@ mixin product-box(img, tit2, text)
             h2=tit2
             p=text
 
+mixin contact-box(img, title, tel, adds)
+    div(class="contact-box")
+        img(src="imgs/" + img + ".png" alt="聯絡我們")
+        h2=title
+        p 電話：#[span=tel]
+        p 地址：#[span=adds]
+        p 時間：#[span AM10:00 - PM09:00]
+
 
 <!DOCTYPE html>
 html(lang="zh")
@@ -42,11 +50,19 @@ html(lang="zh")
             +product-box("cake05", "小路布丁$280", "以輕乳酪為底部的蛋糕體配上滑順帶楓糖香味的布丁，二種層次，吃在嘴裡滿足在心裡")
             +product-box("cake06", "戀愛小路$280", "巧克力的蛋糕體，以乳酪條作為表面的裝飾，內餡夾鮮奶油及覆盆苺的酸甜好滋味")
         a(href="#" class="btn-big") 觀看產品目錄
+        
         div(class="small-line")
         
         +title("NEWS", "最新消息")
+        div(id="news")
+            h1 官方網站正式上線囉
+            p 【狸小路手作烘焙】小路官方網站可以讓您瀏覽小路的所有蛋糕品項唷~您也可以線上詢問小路有關蛋糕的問題喔!那此官方網站是不提供蛋糕訂購的唷~有需要訂購蛋糕的話您可以從小路的粉絲專頁上私訊小路做訂購唷!或是直接撥打門市電話做預訂也是可以的呦~
+            div(class="date") 2019/08/22
         a(href="#" class="btn-big") 觀看更多消息
 
         +title("CONTACT", "聯絡我們")
+        section(id="contact")
+            +contact-box("icon_location", "裕學店", "06-2909702", "台南市東區裕學路12號")
+            +contact-box("icon_location", "民族店", "06-2225374", "台南市中西區民族路二段72-1號")        
         
         include footer.pug
